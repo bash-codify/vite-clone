@@ -1,0 +1,98 @@
+/* ............ Nav Lists Section........... */
+    
+    
+.nav-list-mobile{
+    
+       
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 4rem;
+    overflow-x: hidden;
+    
+}
+
+.nav-list-mobile .navlinks{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 2rem;
+    
+    
+}
+
+.nav-list-mobile .navlinks .links{
+    border-bottom: .1rem solid  #2135471c;
+    padding-bottom: .7rem;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 550;
+    
+    
+}
+
+
+
+
+.links a:hover{
+
+    color: var(--btn-Color);
+}
+
+.large-navlist{
+    
+    display:none;
+}
+
+.search-button{
+    display: none;
+}
+
+.doticon{
+    display: none;
+}
+
+.nav-list-mobile .navlinks .resources{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+ 
+}
+
+.nav-list-mobile .navlinks .version{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    font-weight: 400;
+
+}
+
+
+
+.plus{
+padding-left: 50vw;
+ float: right;
+ cursor: pointer;
+    
+    
+}
+.icon{
+
+    font-size: 1rem;
+    color: #21354760;
+    padding-left: .4rem;
+}
+
+
+
+/* ............End Nav Lists Section........... */

@@ -1,0 +1,73 @@
+/* ...Language, Darkmode , social media Section... */
+
+ .Langdarksocial{
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 9vh;
+    margin-right:3rem;
+    width: 23rem;
+    box-shadow: -1px 0px 55px -21px rgba(0,0,0,0.29);
+    -webkit-box-shadow: -1px 0px 55px -21px rgba(0,0,0,0.29);
+    -moz-box-shadow: -1px 0px 55px -21px rgba(0,0,0,0.29);
+    border-radius: 1.5rem;
+    z-index: 999;
+    
+}
+
+.Langdarksocial .language{
+    
+    border-bottom: .1rem solid  #2135471c;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    width: 100%;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+    
+}
+
+
+.Langdarksocial .language .otherslanguage{
+   transform: translateX(-18.4%);
+   font-size: 1.4rem;
+}
+
+.Langdarksocial .language .otherslanguage span{
+    font-size: 1rem;
+}
+
+.Langdarksocial .appearance{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    gap: 4rem;
+    width: 100%;
+    background: transparent;
+    border-bottom: .1rem solid  #2135471c;
+    padding: 1rem;
+    padding-left: 1.5rem;
+}
+
+.appear-Text{
+    padding-right: 3rem;
+    font-size: 1.2rem;
+}
+
+.Langdarksocial .social-media{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 2rem;
+    width: 100%;
+    margin-right: 8.9rem;
+    padding: 2rem;
+    font-size: 2rem;
+    
+}

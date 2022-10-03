@@ -1,0 +1,148 @@
+
+
+ /* ............Select Language Section........... */
+ .lang-dark-social-mobile{
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    
+  
+ }
+
+ .lang-dark-social-mobile .language{
+    
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 2rem;
+    cursor: pointer;
+    border-bottom: none;
+
+}
+
+.active{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    gap: 1rem;
+    
+}
+
+.otherslanguage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 1rem;
+    margin-left: 3rem;
+    
+}
+
+
+
+.langicon{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+/* ............End Select Language Section........... */
+
+
+/* ............DarkMode Button Section........... */
+
+
+.lang-dark-social-mobile .appearance{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(249,249,249);
+    padding: 1.2rem 1.5rem;
+    border-radius: 1rem;
+    border-bottom: none;
+}
+
+.darkmodebtn{
+    background: transparent;
+    border: .1rem solid #21354760;
+    padding:.2rem;
+    padding-right: 2rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  
+    
+}
+
+.sun{
+    width: 2rem;
+    height:2rem;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    
+    
+}
+.moon{
+    width: 2rem;
+    height:2rem;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    transform: translate(100%, 0%);
+  
+   
+}
+/* ............ End DarkMode Button Section........... */
+
+
+
+
+/* ............Social Media Section........... */
+
+.lang-dark-social-mobile .social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2.4rem;
+    font-size: 2.2rem;
+
+}
+
+.twitter, .discord, .github{
+    opacity:.5;
+    cursor: pointer;
+}
+.github:hover{
+    opacity: 1;
+}
+
+.twitter:hover{
+    opacity: 1;
+} 
+
+.discord:hover{
+    opacity: 1;
+} 
+
+/* ............End Social Media Section........... */
