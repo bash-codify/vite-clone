@@ -41,11 +41,12 @@ html,body{
 body{
 
   color: #213547;
+  overflow-x: hidden;
 }
 
 html{
   font-size: 62.5%;
-  -webkit-font-smoothing: antialiased;
+  
 }
 
 a{

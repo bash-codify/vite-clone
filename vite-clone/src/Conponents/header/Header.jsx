@@ -76,7 +76,7 @@ const Header = () => {
 
             <div>
               <a href="">
-                <img src={logo} alt="" />
+                <img className='logo-image' src={logo} alt="" />
               </a>
 
             </div>
@@ -163,11 +163,14 @@ const Header = () => {
                   </div>
               </div>
 
+              {
+
+                langa &&
+
               <div className='otherLanguage-container'>
 
                   {
-                    langa &&
-                
+                    
                     languages.map((item, index)=>{
                       const {id, lang} = item;
                       return(
@@ -185,6 +188,9 @@ const Header = () => {
                   }
 
               </div>
+
+              }
+
 
 
                 </div>
