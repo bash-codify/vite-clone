@@ -1,14 +1,15 @@
 .hero-container{
 
     width: 100vw;
-    min-height: 100vh;
-   overflow-x: hidden;
+    overflow: hidden;
 
 }
 
 .hero-wrapper{
-    width:90vw;
+
+    max-width:90vw;
     margin: 0 auto;
+  
    
 }
 
@@ -18,7 +19,10 @@
     flex-direction: column-reverse;
    
 }
+
+
 .hero-image{
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,13 +31,12 @@
     
 }
 
-
-
 .shadow{
+
     position: absolute;
     top: 7.7rem;
-    width: 22rem;
-    height: 22rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: 50%;
     background: linear-gradient(138deg, #63cafa 42%, #be5efd 55%);
     filter: blur(40px);
@@ -68,7 +71,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 1.8rem;
+    margin-top: 5rem;
 
 }
 
@@ -125,7 +128,7 @@
     text-transform: capitalize;
     font-weight: 500;
     background: #F2F2F2;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 
     
 }
@@ -145,7 +148,7 @@
     color: rgba(255, 255, 255, 0.89);
     font-size: 1.5rem;
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .get-started:hover{
@@ -191,7 +194,7 @@
     position: absolute;
     top: 7.7rem;
     width: 40%;
-    height: 30%;
+    height: 29%;
     border-radius: 50%;
     background: linear-gradient(138deg, #63cafa 42%, #be5efd 55%);
     filter: blur(40px);
@@ -226,7 +229,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 1.8rem;
+    margin-top: .5rem;
 
 }
 
@@ -254,7 +257,7 @@
 
 .hero-text p{
 
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 400;
     padding-top: .5rem;
     width: 100%;
@@ -268,7 +271,7 @@
     align-items: center;
     flex-wrap: nowrap;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
    
 }
 
@@ -281,7 +284,7 @@
     text-transform: capitalize;
     font-weight: 600;
     background: #F2F2F2;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #76767A;
 
     

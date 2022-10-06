@@ -1,6 +1,9 @@
 import React from 'react';
 import Header from './header/Header';
 import Hero from './hero/Hero';
+import Service from './service/Service';
+import Sponsor from './sponsor/Sponsor';
+import Footer from './footer/Footer';
 
 
 const Home = () => {
@@ -13,7 +16,12 @@ const Home = () => {
       
       <main>
 
-      <Hero/>
+      <Hero />
+      <Service />
+      <Sponsor />
+      <Footer />
+      
+      
 
       </main>
 
