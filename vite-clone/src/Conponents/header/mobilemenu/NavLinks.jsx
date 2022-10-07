@@ -20,7 +20,7 @@ const NavLinks = () => {
                 <li className='links'><a href="/">Guide</a></li>
                 <li className='links'><a href="/">Config</a></li>
                 <li className='links'><a href="/">Plugins</a></li>
-                <li className='links ' onClick={() =>{ 
+                <li className='links special-link' onClick={() =>{ 
                   
                   setSubToggle((prev)=> !prev)
                   setSubToggle2(false)
@@ -42,7 +42,7 @@ const NavLinks = () => {
                 }
                   </li>
                 
-                <li className='links' onClick={() =>{
+                <li className='links special-link' onClick={() =>{
                   
                   setSubToggle2((prev)=> !prev) 
                   setSubToggle(false)

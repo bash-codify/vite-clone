@@ -1,7 +1,7 @@
 .service-container{
     width:100vw;
-    overflow: hidden;
     margin-top: 7rem;
+    overflow-x: hidden;
 }
 
 .service-wrapper{
@@ -195,8 +195,8 @@ p{
     
     .service-container{
         width:100vw;
-        overflow: hidden;
-        margin-top: -18rem;
+        overflow-x: hidden;
+        margin-top: -10rem;
     }
 
     .service-wrapper{

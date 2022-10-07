@@ -154,10 +154,14 @@ nav{
    
 }
 
+.lang{
+    z-index: 1;
+}
+
 
 .mobilemenu-container{
     position: fixed;
-    top: 10.7vh;
+    top:0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -169,6 +173,8 @@ nav{
     align-items: center;
     overflow: auto;
     padding-bottom: 1.5rem;
+    margin-top: 6.6rem;
+    
     
 }
 
@@ -360,6 +366,8 @@ nav{
     
 
 @media screen and (min-width:769px) {
+
+   
 
 /* ......Large screen NavList section........*/
 
@@ -649,8 +657,36 @@ nav{
 }
 
 @media only screen and (min-width: 960px) {
+
+    header{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.76);
+        overflow: hidden;
+        position: fixed;
+        z-index: 999;
+    
+    
+    }
     nav{
         border: none;
+        z-index: -999;
+    }
+
+   
+
+
+    .resource-container{
+       
+        margin-right: 15rem;
+    }
+
+    .versions-container{
+       
+        margin-right: 6rem;
     }
 }
 
@@ -665,7 +701,7 @@ nav{
         align-items: center;
         justify-content: center;
         border: none;
-        padding: 0;
+        padding: 1rem;
     
     }
 

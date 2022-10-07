@@ -310,7 +310,7 @@
         display: flex;
         align-content: center;
         justify-content: center;
-        width: 45vw;
+        width: 44.45vw;
         background: #F9F9F9;
         padding: 5rem;
         filter: grayscale(100%);
@@ -330,6 +330,12 @@
         background: rgba(170, 170, 170, 0.192);
     }
     
+    .gold-spon-icons:nth-child(7){
+        border-bottom-left-radius: 1.5rem;
+    }
+    .gold-spon-icons:nth-child(8){
+        border-bottom-right-radius: 1.5rem;
+    }
     
     .sponsor-btn{
         margin-top: 5rem;
@@ -376,7 +382,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    
         filter: grayscale(100%);
         
         
@@ -390,11 +395,17 @@
 
     }
 
+    .gold-spon-icons:nth-child(8){
+        border-bottom-right-radius: 0;
+    }
+
     .empty-sponsor{
         display: block;
         width:44.6vw;
         background: #F9F9F9;
         padding: 9rem 0;
+        border-bottom-right-radius: 1.5rem;
+        
     }
 
     .gold-sponsors-container{
@@ -428,6 +439,7 @@
         width: 29.5vw;
         background: #F9F9F9;
         padding: 6rem;
+        border-bottom-right-radius: 1.5rem;
     }
 }
 
@@ -501,6 +513,7 @@
         width: 29.5vw;
         background: #F9F9F9;
         padding: 6rem;
+        border-radius: none;
     }
 }
 
@@ -539,11 +552,22 @@
         filter: grayscale(100%);
         
     }
+
+
+    .gold-spon-icons:nth-child(7){
+        border-bottom-left-radius: 0;
+    }
+
+    .gold-spon-icons:nth-child(6){
+        border-bottom-left-radius: 1.5rem;
+    }
+
     .empty-sponsor-gold{
         display: block;
         width: 17.6vw;
         background: #F9F9F9;
         padding: 6rem;
+        border-bottom-right-radius: 0;
     }
     
     .empty-sponsor-gold1{
@@ -551,6 +575,7 @@
         width: 17.6vw;
         background: #F9F9F9;
         padding: 6rem;
+        border-bottom-right-radius: 1.5rem;
     }
 
 }

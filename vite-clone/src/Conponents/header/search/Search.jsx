@@ -9,16 +9,16 @@ const Search = ({searchToggle})=> {
 useEffect(() => {
   let handler = (e)=>{
     
-    if(!container.current.contains(e.target)){
+    if(container.current.contains(e.target)){
       
         searchToggle(false)
     }
-    if(container.current.contains(e.target)){
+    if(!container.current.contains(e.target)){
+
       searchToggle(true)
 
-    }else{
-      searchToggle(true)
     }
+   
 
   }
 

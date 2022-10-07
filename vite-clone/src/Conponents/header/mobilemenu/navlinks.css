@@ -24,10 +24,18 @@
 .nav-list-mobile .navlinks .links{
     border-bottom: .1rem solid  #2135471c;
     padding-bottom: .7rem;
-    width: 100%;
+    width: 73.5vw;
     cursor: pointer;
     font-weight: 550;
     
+    
+}
+
+
+.special-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
 }
 
@@ -80,8 +88,7 @@
 
 
 .plus{
-padding-left: 50vw;
- float: right;
+
  cursor: pointer;
     
     
