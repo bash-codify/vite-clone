@@ -10,8 +10,11 @@
 .footer-content{
     display: grid;
     place-items: center;
+    justify-content: center;
 }
 
 .footer-content p{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    width: 90%;
+    text-align: center;
 }
