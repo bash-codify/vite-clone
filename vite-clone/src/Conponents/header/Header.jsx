@@ -26,6 +26,13 @@ const Header = () => {
   const [searchToggle, setSearchToggle] = useState(false);
 
  
+  const MenuToggleBtn = ()=>{
+    setMenuToggle((menuToggle)=>{
+      return !menuToggle;
+    })
+    menuToggle? document.body.style.overflow = 'auto' : document.body.style.overflow = 'hidden'; 
+
+  }
 
   const MouseEnter = () =>{
     setResource (true)
@@ -62,6 +69,7 @@ const Header = () => {
   
   }, []);
 
+  
 
 
   return (
@@ -102,7 +110,7 @@ const Header = () => {
             {
               !menuToggle && 
 
-              <div className="hambugger" onClick={()=> setMenuToggle((prev)=> !prev)}></div>
+              <div className="hambugger" onClick={()=> MenuToggleBtn()}></div>
 
             }
               
@@ -110,7 +118,7 @@ const Header = () => {
                 menuToggle &&
 
                 <div className="bar">
-                  <MdOutlineClose onClick={()=> setMenuToggle(false)}/>
+                  <MdOutlineClose onClick={()=> MenuToggleBtn()}/>
                 </div>
               }
               
@@ -286,7 +294,7 @@ const Header = () => {
       {
         menuToggle &&
 
-          <div>
+          <div className='mobilemenu-container'>
             
           <MobileMenu/>
 

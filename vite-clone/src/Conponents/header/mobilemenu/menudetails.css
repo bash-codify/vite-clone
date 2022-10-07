@@ -8,6 +8,7 @@
     align-items: left;
     justify-content: center;
     
+    
   
  }
 
@@ -17,11 +18,13 @@
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     justify-content: center;
     gap: 2rem;
     cursor: pointer;
     border-bottom: none;
+    transform: translateX(-6rem);
+    
 
 }
 
@@ -63,6 +66,7 @@
 
 .lang-dark-social-mobile .appearance{
     margin-top: 2rem;
+    width: 75vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,6 +74,16 @@
     padding: 1.2rem 1.5rem;
     border-radius: 1rem;
     border-bottom: none;
+    
+    
+}
+
+.appear-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-.5rem);
+    
 }
 
 .darkmodebtn{

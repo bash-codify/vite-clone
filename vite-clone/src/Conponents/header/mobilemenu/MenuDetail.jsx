@@ -58,7 +58,7 @@ export const MenuDetail = () => {
         </div>
 
         <div className="appearance">
-          <div>
+          <div className='appear-text'>
             <p>
               Appearance
             </p>
