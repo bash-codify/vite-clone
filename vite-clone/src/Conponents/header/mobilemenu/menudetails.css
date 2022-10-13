@@ -1,56 +1,63 @@
 
 
  /* ............Select Language Section........... */
- .lang-dark-social-mobile{
+ .M-lang-dark-social-mobile{
 
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
     width: 73.5vw;
-   
-    
-    
   
  }
 
- .lang-dark-social-mobile .language{
+ .M-lang-dark-social-mobile .M-language{
     
     font-size: 1.4rem;
     margin-top: 3rem;
-    cursor: pointer;
     border-bottom: none;
     
-    
-    
-
 }
 
-.active{
+.M-lang-dark-social-mobile .M-language .M-active{
+
     display: flex;
+    justify-content: left;
     align-items: center;
+    gap: .8rem;
     font-weight: 600;
-    gap: 1rem;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.M-lang-dark-social-mobile .M-language .M-active p{
+
+   transform: translateY(-.3rem);
     
 }
 
-.otherslanguage{
+.M-otherslanguage{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    gap: 1rem;
-    margin-left: 3rem;
+    width: 100%;
+    padding: .5rem;
+    cursor: pointer;
+    margin-left: 2.5rem;
     
 }
 
+.M-otherslanguage p:hover{
+    color: var(--btn-Color);
+}
 
-
-.langicon{
-    font-size: 2rem;
+.M-langicon{
+    font-size: 1.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -62,7 +69,7 @@
 /* ............DarkMode Button Section........... */
 
 
-.lang-dark-social-mobile .appearance{
+.M-lang-dark-social-mobile .M-appearance{
     margin-top: 2rem;
     width: 100%;
     display: flex;
@@ -76,7 +83,7 @@
     
 }
 
-.appear-text{
+.M-appear-text{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,7 +91,7 @@
     
 }
 
-.darkmodebtn{
+.M-darkmodebtn{
     background: transparent;
     border: .1rem solid #21354760;
     padding:.2rem;
@@ -98,7 +105,7 @@
     
 }
 
-.sun{
+.M-sun{
     width: 2rem;
     height:2rem;
     border-radius: 50%;
@@ -110,7 +117,7 @@
     
     
 }
-.moon{
+.M-moon{
     width: 2rem;
     height:2rem;
     border-radius: 50%;
@@ -131,7 +138,7 @@
 
 /* ............Social Media Section........... */
 
-.lang-dark-social-mobile .social-media{
+.M-lang-dark-social-mobile .M-social-media{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,120 +148,21 @@
 
 }
 
-.twitter, .discord, .github{
+.M-twitter, .M-discord, .M-github{
     opacity:.5;
     cursor: pointer;
 }
-.github:hover{
+
+.M-github:hover{
     opacity: 1;
 }
 
-.twitter:hover{
+.M-twitter:hover{
     opacity: 1;
 } 
 
-.discord:hover{
+.M-discord:hover{
     opacity: 1;
 } 
 
 /* ............End Social Media Section........... */
-
-
-/* 
-
-@media screen and (min-width:375px) {
-
-
-    .lang-dark-social-mobile{
-
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        justify-content: center;
-        width: 70.5vw;
-       
-        
-        
-      
-     }
-
-    
-}
-
-
-
-@media screen and (min-width:390px) {
-
-
-    .lang-dark-social-mobile{
-
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        justify-content: center;
-        width: 71vw;
-       
-        
-        
-      
-     }
-
-    
-}
-
-
-@media screen and (min-width:412px) {
-
-
-    .lang-dark-social-mobile{
-
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        justify-content: center;
-        width: 69vw;
-       
-        
-        
-      
-     }
-
-    
-}
-@media screen and (min-width:460px) {
-
-
-    .lang-dark-social-mobile{
-
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        justify-content: center;
-        width: 67vw;
-       
-        
-        
-      
-     }
-
-    
-}
-
-@media screen and (min-width:500px) {
-
-
-    .lang-dark-social-mobile{
-
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        justify-content: center;
-        width: 67vw;
-       
-        
-        
-      
-     }
-
-    
-} */

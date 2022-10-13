@@ -16,7 +16,7 @@ const Langdarkmodesocial = () => {
   return (
     <>
     
-    <div className='Langdarksocial'>
+    <div className='Lang-Dark-Social'>
 
     <div className="language">
                 <div className='active' onClick={() => setLangToggle((prev) => !prev)}>

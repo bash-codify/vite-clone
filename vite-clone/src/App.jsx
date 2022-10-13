@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import Home from './Conponents/Home';
+// import Guide from './Conponents/Pages/Guide/Guide';
 
 function App() {
  
@@ -8,7 +9,8 @@ function App() {
     <div >
 
     <Home />
-    
+
+    {/* <Guide/> */}
     </div>
   )
 }

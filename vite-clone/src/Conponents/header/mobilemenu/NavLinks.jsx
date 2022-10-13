@@ -14,44 +14,44 @@ const NavLinks = () => {
     
 
       
-      <div className="nav-list-mobile">
+      <div className="M-nav-list-mobile">
 
-              <ul className="navlinks">
-                <li className='links'><a href="/">Guide</a></li>
-                <li className='links'><a href="/">Config</a></li>
-                <li className='links'><a href="/">Plugins</a></li>
-                <li className='links special-link' onClick={() =>{ 
+              <ul className="M-navlinks">
+                <li className='M-links'><a href="/">Guide</a></li>
+                <li className='M-links'><a href="/">Config</a></li>
+                <li className='M-links'><a href="/">Plugins</a></li>
+                <li className='M-links' onClick={() => { 
                   
                   setSubToggle((prev)=> !prev)
                   setSubToggle2(false)
-                  }}>Resource<span className='plus'><MdAdd/></span>
+                  }}>Resource<span className='M-plus M-special-link'><MdAdd/></span>
                 {
                   subToggle &&
 
-                  <ul className='resources'>
-                    <li><a href="">Team</a><span className='icon' ><MdNorthEast/></span></li>
-                    <li><a href="">Twitter</a><span className='icon' ><MdNorthEast/></span></li>
-                    <li><a href="">Discord Chat</a><span className='icon' ><MdNorthEast/></span></li>
-                    <li><a href="">Awesome Vite</a><span className='icon'> <MdNorthEast/></span></li>
-                    <li><a href="">DEV Community</a> <span className='icon' ><MdNorthEast/></span></li>
-                    <li><a href="">Rollup Plugins Compat</a><span className='icon' ><MdNorthEast/></span></li>
-                    <li><a href="">Changelog</a><span className='icon' ><MdNorthEast/></span></li>
+                  <ul className='M-resources'>
+                    <li><a href="">Team</a><span className='M-icon' ><MdNorthEast/></span></li>
+                    <li><a href="">Twitter</a><span className='M-icon' ><MdNorthEast/></span></li>
+                    <li><a href="">Discord Chat</a><span className='M-icon' ><MdNorthEast/></span></li>
+                    <li><a href="">Awesome Vite</a><span className='M-icon'> <MdNorthEast/></span></li>
+                    <li><a href="">DEV Community</a> <span className='M-icon' ><MdNorthEast/></span></li>
+                    <li><a href="">Rollup Plugins Compat</a><span className='M-icon' ><MdNorthEast/></span></li>
+                    <li><a href="">Changelog</a><span className='M-icon' ><MdNorthEast/></span></li>
                   
                   </ul>
 
                 }
                   </li>
                 
-                <li className='links special-link' onClick={() =>{
+                <li className='M-links ' onClick={() =>{
                   
                   setSubToggle2((prev)=> !prev) 
                   setSubToggle(false)
-                  }}>Version <span className='plus'><MdAdd/></span>
+                  }}>Version <span className='M-plus M-special-link'><MdAdd/></span>
 
                 {subToggle2 &&
 
-                  <ul className='version'>
-                    <li><a href="/">Vite 2 Docs</a><span className='icon' ><MdNorthEast/></span></li>
+                  <ul className='M-version'>
+                    <li><a href="/">Vite 2 Docs</a><span className='M-icon' ><MdNorthEast/></span></li>
                   </ul>
                 
                 }

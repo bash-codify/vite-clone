@@ -41,7 +41,7 @@ html,body{
 
 body{
 
-  color: #213547;
+  color: #767676;
   overflow-x: hidden;
   
 }
@@ -54,7 +54,7 @@ html{
 a{
 
   text-decoration: none;
-  color: #76767A;
+  color: #767676;
 }
 
 li{
@@ -63,9 +63,9 @@ li{
 }
 
 p{
-  color: #76767A;
+  color: #767676;
 }
 
 h1,h2,h3,h4,h5,h6{
-  color: #76767A;
+  color: #131313ce;
 }

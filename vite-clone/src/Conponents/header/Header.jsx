@@ -1,4 +1,4 @@
-import React,{ useState,useEffect, useRef }  from 'react';
+import React,{ useState, useEffect, useRef }  from 'react';
 import { MdNorthEast, MdAdd, MdKeyboardArrowDown,MdTranslate, MdOutlineWbSunny, MdOutlineBedtime, MdOutlineClose,MdMoreHoriz } from "react-icons/md";
 import { FaTwitter, FaDiscord,FaGithub } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
@@ -8,8 +8,6 @@ import langs from './langdata';
 import MobileMenu from './mobilemenu/MobileMenu';
 import Langdarkmodesocial from './largeScreen/Langdarkmodesocial';
 import Search from './search/Search'
-
-
 
 
 
@@ -24,6 +22,7 @@ const Header = () => {
   const [mode, setMode] = useState(false);
   const [langa, setLanga] = useState(false);
   const [searchToggle, setSearchToggle] = useState(false);
+  const langRef = useRef(null)
 
  
   const MenuToggleBtn = ()=>{
@@ -34,24 +33,20 @@ const Header = () => {
 
   }
 
-  const MouseEnter = () =>{
-    setResource (true)
-  }
-  const MouseLeave = () =>{
-    setResource (false)
-  }
-  const MouseEnter2 = () =>{
-    setVersion (true)
-  }
-  const MouseLeave2 = () =>{
-    setVersion (false)
-  }
-  const MouseEnter3 = () =>{
-    setLargeMenuIcon (true)
-  }
-  const MouseLeave3 = () =>{
-    setLargeMenuIcon (false)
-  }
+  // const MouseEnter = () =>{
+  //   setResource (true)
+  // }
+  
+  // const MouseEnter2 = () =>{
+  //   setVersion (true)
+  // }
+ 
+  
+  // const MouseEnter3 = () =>{
+  //   setLargeMenuIcon (true)
+  // }
+ 
+  
 
 
   useEffect(()=>{
@@ -63,11 +58,37 @@ const Header = () => {
         setMenuToggle(false)
 
       }
+      else{
+
+        setVersion (false);
+        setResource (false)
+        setLargeMenuIcon (false)
+
+      }
       
     })
     setMenuToggle(false)
   
   }, []);
+
+
+  useEffect(()=>{
+    const LangHandler = (e)=>{
+      if(!langRef.current?.contains(e.target)){
+      
+       setLanga(true)
+      }
+
+     
+    }
+
+    document.addEventListener('mouseleave', LangHandler);
+
+    return (()=>{
+      document.removeEventListener('mouseleave', LangHandler)
+    });
+
+  },[langa])
 
   
 
@@ -144,8 +165,8 @@ const Header = () => {
               <li className='large-links'><a href="/">Guide</a></li>
               <li className='large-links'><a href="/">Config</a></li>
               <li className='large-links'><a href="/">Plugins</a></li>
-              <li className='large-links hoverLink ' onMouseEnter={()=> MouseEnter()} onMouseLeave={()=> MouseLeave()}>Resource<span className='arrowdown'><MdKeyboardArrowDown/></span></li>
-              <li className='large-links hoverLink' onMouseEnter={()=> MouseEnter2()} onMouseLeave={()=> MouseLeave2()} >Version <span className='arrowdown'><MdKeyboardArrowDown/></span></li>
+              <li className='large-links hoverLink ' onMouseEnter={()=> setResource (true)}>Resource<span className='arrowdown'><MdKeyboardArrowDown/></span></li>
+              <li className='large-links hoverLink' onMouseEnter={()=> setVersion (true)} >Version <span className='arrowdown'><MdKeyboardArrowDown/></span></li>
             
             </ul>
 
@@ -154,13 +175,13 @@ const Header = () => {
  
           <div className='large-menu-icon'>
 
-            <MdMoreHoriz  onMouseEnter={()=> MouseEnter3()} onMouseLeave={()=> MouseLeave3()}/>
+            <MdMoreHoriz  onMouseEnter={()=> setLargeMenuIcon (true)} />
 
           </div>
 
           <div className='XLangdarksocial'>
 
-              <div className="language" onMouseEnter={() => setLanga(true)} onMouseLeave={()=> setLanga(false)}>
+              <div className="language" onMouseEnter={() => setLanga(true)}>
 
                 <div className='active' >
                   <div className='langicon'>
@@ -170,12 +191,14 @@ const Header = () => {
                     <MdKeyboardArrowDown/>
                   </div>
               </div>
+              
 
               {
 
                 langa &&
+                
 
-              <div className='otherLanguage-container'>
+              <div className='XotherLanguage-container' >
 
                   {
                     
@@ -183,11 +206,11 @@ const Header = () => {
                       const {id, lang} = item;
                       return(
 
-                        <div className='otherslanguage' onClick={() =>{
+                        <div className='otherslanguages' onClick={() =>{
                           setSelectIndex(index)
                           setLangToggle(false)
                         } } key={id}>
-                          <div >
+                          <div>
                             <p> {lang} <span><MdNorthEast/></span></p>
                           </div>
                         </div>

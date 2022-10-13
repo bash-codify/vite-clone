@@ -17,11 +17,11 @@ export const MenuDetail = () => {
   return (
     <>
     
-    <div className='lang-dark-social-mobile'>
+    <div className='M-lang-dark-social-mobile'>
 
-        <div className="language">
-          <div className='active' onClick={() => setLangToggle((prev) => !prev)}>
-            <div className='langicon'>
+        <div className="M-language">
+          <div className='M-active' onClick={() => setLangToggle((prev) => !prev)}>
+            <div className='M-langicon'>
               <MdTranslate/>
             </div>
             {
@@ -31,7 +31,7 @@ export const MenuDetail = () => {
             
           
             
-            <div className='langicon'>
+            <div className='M-langicon'>
               <MdKeyboardArrowDown/>
             </div>
           </div>
@@ -43,7 +43,7 @@ export const MenuDetail = () => {
               const {id, lang} = item;
               return(
 
-                <div className='otherslanguage' onClick={() =>{
+                <div className='M-otherslanguage' onClick={() =>{
                   setSelectIndex(index)
                   setLangToggle(false)
                 } } key={id}>
@@ -57,18 +57,18 @@ export const MenuDetail = () => {
 
         </div>
 
-        <div className="appearance">
-          <div className='appear-text'>
+        <div className="M-appearance">
+          <div className='M-appear-text'>
             <p>
               Appearance
             </p>
           </div>
           <div>
-            <button className='darkmodebtn' onClick={() => setMode((prev)=> !prev)}>
+            <button className='M-darkmodebtn' onClick={() => setMode((prev)=> !prev)}>
 
               {
                 !mode && 
-              <span className='sun'>
+              <span className='M-sun'>
 
               <MdOutlineWbSunny />
 
@@ -76,7 +76,7 @@ export const MenuDetail = () => {
               }
               {
                 mode &&
-              <span className='moon'> 
+              <span className='M-moon'> 
 
               <MdOutlineBedtime />
 
@@ -86,14 +86,14 @@ export const MenuDetail = () => {
           </div>
         </div>
 
-        <div className="social-media">
-              <div className='twitter'>
+        <div className="M-social-media">
+              <div className='M-twitter'>
               <FaTwitter/>
               </div>
-              <div className='discord'>
+              <div className='M-discord'>
               <FaDiscord/>
               </div>
-              <div className='github'>
+              <div className='M-github'>
               <FaGithub/>
         </div>
       </div>

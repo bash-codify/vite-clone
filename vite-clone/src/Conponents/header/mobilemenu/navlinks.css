@@ -1,7 +1,7 @@
 /* ............ Nav Lists Section........... */
     
     
-.nav-list-mobile{
+.M-nav-list-mobile{
     
        
     font-size: 1.3rem;
@@ -11,7 +11,7 @@
     
 }
 
-.nav-list-mobile .navlinks{
+.M-nav-list-mobile .M-navlinks{
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -21,59 +21,66 @@
     
 }
 
-.nav-list-mobile .navlinks .links{
+.M-nav-list-mobile .M-navlinks .M-links{
     border-bottom: .1rem solid  #2135471c;
-    padding-bottom: .7rem;
+    padding-bottom: 1rem;
     width: 73.5vw;
     cursor: pointer;
-    font-weight: 550;
+    font-weight: 500;
     
     
 }
 
 
-.special-link{
+.M-special-link{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: right;
+    justify-content: right;
+    transform: translateY(-1.5rem);
+    overflow: hidden;
     
 }
 
 
 
 
-.links a:hover{
+.M-links a:hover{
 
     color: var(--btn-Color);
 }
 
-.large-navlist{
+.M-large-navlist{
     
     display:none;
 }
 
-.search-button{
+.M-search-button{
     display: none;
 }
 
-.doticon{
+.M-doticon{
     display: none;
 }
 
-.nav-list-mobile .navlinks .resources{
+.M-nav-list-mobile .M-navlinks .M-resources{
     display: flex;
     flex-direction: column;
     align-items: left;
-    justify-content: center;
-    gap: 2rem;
+    justify-content: left;
+    gap: 1.5rem;
     margin-left: 1rem;
     margin-top: 1.5rem;
     font-size: 1.3rem;
     font-weight: 400;
+    /* padding-bottom: 2rem;
+    border-bottom: .1rem solid  #2135471c;
+    transform: translateX(20rem); */
  
 }
 
-.nav-list-mobile .navlinks .version{
+
+
+.M-nav-list-mobile .M-navlinks .M-version{
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -87,13 +94,13 @@
 
 
 
-.plus{
+.M-plus{
 
  cursor: pointer;
     
     
 }
-.icon{
+.M-icon{
 
     font-size: 1rem;
     color: #21354760;

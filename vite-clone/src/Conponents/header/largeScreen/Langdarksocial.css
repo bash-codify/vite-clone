@@ -1,6 +1,6 @@
 /* ...Language, Darkmode , social media Section... */
 
- .Langdarksocial{
+ .Lang-Dark-Social{
     
     position: fixed;
     top: 0;
@@ -14,14 +14,13 @@
     border-radius: 1.5rem;
     z-index: 999;
     background: #fff;
+    cursor: pointer;
     
 }
 
-.Langdarksocial .language{
+.Lang-Dark-Social .language{
     
     border-bottom: .1rem solid  #2135471c;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
     width: 100%;
     font-size: 1.4rem;
     display: flex;
@@ -29,21 +28,47 @@
     align-items: left;
     justify-content: center;
     padding: 2rem;
-    gap: 1rem;
+   
     
 }
 
 
-.Langdarksocial .language .otherslanguage{
-   transform: translateX(-18.4%);
+.Lang-Dark-Social .language .otherslanguage p{
+    transform: translateX(-28%);
    font-size: 1.4rem;
+   padding: .7rem 1rem;
 }
 
-.Langdarksocial .language .otherslanguage span{
+
+.otherslanguage p:hover::after{
+
+    content: "";
+    background: rgba(128, 128, 128, 0.212);
+    border-radius: .5rem;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 4rem;
+    transition: all .6s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--btn-Color);
+    
+}
+
+.otherslanguage p:hover{
+    color: var(--btn-Color);
+}
+
+
+.Lang-Dark-Social .language .otherslanguage span{
     font-size: 1rem;
 }
 
-.Langdarksocial .appearance{
+.Lang-Dark-Social .appearance{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,9 +84,10 @@
 .appear-Text{
     padding-right: 3rem;
     font-size: 1.2rem;
+    transform: translateY(-.5rem);
 }
 
-.Langdarksocial .social-media{
+.Lang-Dark-Social .social-media{
     display: flex;
     align-items: center;
     justify-content: left;

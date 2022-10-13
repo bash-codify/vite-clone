@@ -1,5 +1,4 @@
 import React from 'react'
-import './mobilemenu.css'
 import NavLinks from './NavLinks';
 import MenuDetail  from './MenuDetail';
 

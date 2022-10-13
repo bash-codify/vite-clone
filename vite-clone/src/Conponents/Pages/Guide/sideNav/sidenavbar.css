@@ -1,0 +1,349 @@
+
+
+.header-container{
+
+    width: 100%;
+    height: 5vh;
+    border-bottom: .1rem solid  #2135471c;
+    position: fixed;
+    z-index: 1000;
+  
+  
+    
+}
+
+.header-wrapper{
+
+    max-width: 90%;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    
+}
+
+
+.logo-Container{
+
+    display: none;
+}
+
+.menu{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.list-container{
+
+    background: #666666a8;
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    z-index: 1200;
+    display: none;
+    
+}
+
+.lists{
+
+    position: absolute;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    width: 75%;
+    height: 100vh;
+    background: #fff;
+    overflow-y: auto;
+   
+   
+
+}
+
+.guide-list{
+
+    margin: 4rem 4rem 0 3.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 1.5rem;
+
+}
+
+.guide-text{
+
+    font-size: .95rem;
+
+}
+
+.guide-links{
+
+    font-size: 1.24rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: .7rem;
+    padding-bottom: 4rem;
+    border-bottom: .1rem solid  #2135471c;
+    
+}
+
+.guide-links a:hover{
+
+    color: rgb(0, 0, 0);
+    transition: all .6s linear;
+}
+
+.api-list{
+
+    font-size: 1.24rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 4rem 0 3.4rem;
+}
+
+.api-text{
+
+    font-size: .95rem;
+
+}
+
+.api-links{
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: .7rem;
+    padding-bottom: 10rem;
+
+}
+
+.api-links a:hover{
+
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    transition: all .6s linear;
+}
+
+
+@media screen and (min-width:500px) {
+    
+    .header-container{
+        width: 100%;
+        min-height: 9vh;
+        border-bottom: .1rem solid  #2135471c;
+       
+       
+    
+    }
+    .header-wrapper{
+        max-width: 90%;
+        margin: 0 auto;
+        
+    }
+
+    .list-container{
+        background: #666666a8;
+        width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        top: -10vh;
+        left:0;
+        right: 0;
+        bottom: 0;
+        margin:0  auto;
+        
+    }
+    
+    .lists{
+
+        position: absolute;
+        top: 0;
+        left:0;
+        bottom: 0;
+        right: 0;
+        width: 35rem;
+        min-height: 100vh;
+        background: #fff;
+        overflow-y: auto;
+
+    
+    }
+    
+    .guide-list{
+    
+        margin: 4rem 4rem 0 3.4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .guide-text{
+
+        font-size: .95rem;
+    }
+    
+    .guide-links{
+
+        font-size: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        gap: .7rem;
+        padding-bottom: 4rem;
+        border-bottom: .1rem solid  #2135471c;
+        
+    }
+    
+
+    
+    .api-list{
+    
+        font-size: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        gap: 1rem;
+        margin: 2rem 4rem 0 3.4rem;
+    }
+    
+    .api-text{
+        font-size: .95rem;
+    }
+    
+    .api-links{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        gap: .7rem;
+        padding-bottom: 10rem;
+    
+    }
+    
+    .api-links a:hover{
+    
+        color: #000;
+        font-weight: 500;
+        transition: all .6s linear;
+    }
+    
+    
+}
+
+@media screen and (min-width:960px) {
+
+ 
+
+    .header-container{
+
+        border-bottom: none;
+
+    }
+
+
+   
+
+    .list-container{
+       
+       background: transparent;
+       position: initial;
+       display: block;
+       
+      
+    
+      
+    }
+
+    .lists{
+        
+        position: fixed;
+        top: 0;
+        left:0;
+        bottom: 0;
+        right: 0;
+        width: 28.2rem;
+        min-height: 100vh;
+        background: #f7f7f7;
+        box-shadow:none;
+        overflow-y: auto;
+        
+       
+       
+        
+    
+    }
+
+
+    .guide-list{
+
+        margin: 9.8rem 4rem 0 3.4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+     /* ... Logo and Text  Section.....*/
+
+.logo-Container{
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: .7rem;
+    position: fixed;
+    top: 0;
+    background: #f7f7f7;
+    border-bottom: .1rem solid  #2135471c;
+    width: 20.8rem;
+    padding: 2.15rem 0;
+    
+}
+
+.logo-Image{
+
+    width: 100%;
+    height: 2.3rem;
+    
+}
+
+.logo-Container:hover{
+
+    opacity: .7;
+}
+
+.logo-Container h2{
+
+    font-size:1.8rem;
+    font-weight: 500;
+    color: #131313ce;
+    opacity: 1;
+}
+
+ /* ... Logo and Text  Section.....*/
+
+}
