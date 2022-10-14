@@ -56,6 +56,9 @@ const Header = () => {
       if(window.innerWidth > 769){
 
         setMenuToggle(false)
+        setLargeMenuIcon (false)
+        setVersion (false);
+        setResource (false)
 
       }
       else{
