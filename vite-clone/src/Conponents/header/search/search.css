@@ -9,8 +9,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: #F9F9F9;
-    z-index: 999;
+    background: #f9f9f9;
+    overflow: hidden;
 }
 
 .search-wrapper{
@@ -202,8 +202,8 @@ input{
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgb(130,137,157);
-        z-index: 999;
+        background: rgba(130, 137, 157, 0.918);
+        overflow: hidden;
     }
 
     .search-wrapper{
@@ -222,7 +222,7 @@ input{
 
         background: #fff;
         width:fit-content;
-        height: 35vh;
+        height: 33vh;
         border-radius: .8rem;
         display: flex;
         align-items: top;

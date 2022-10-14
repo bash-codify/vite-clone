@@ -18,7 +18,7 @@
     
 }
 
-.Lang-Dark-Social .language{
+.Lang-Dark-Social .L-language{
     
     border-bottom: .1rem solid  #2135471c;
     width: 100%;
@@ -32,15 +32,22 @@
     
 }
 
+.L-active p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+   
+}
 
-.Lang-Dark-Social .language .otherslanguage p{
-    transform: translateX(-28%);
+.Lang-Dark-Social .L-language .L-otherslanguage p{
+    transform: translateX(-5%);
    font-size: 1.4rem;
    padding: .7rem 1rem;
+   
 }
 
 
-.otherslanguage p:hover::after{
+.L-otherslanguage p:hover::after{
 
     content: "";
     background: rgba(128, 128, 128, 0.212);
@@ -59,16 +66,16 @@
     
 }
 
-.otherslanguage p:hover{
+.L-otherslanguage p:hover{
     color: var(--btn-Color);
 }
 
 
-.Lang-Dark-Social .language .otherslanguage span{
+.Lang-Dark-Social .L-language .L-otherslanguage span{
     font-size: 1rem;
 }
 
-.Lang-Dark-Social .appearance{
+.Lang-Dark-Social .L-appearance{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,13 +88,65 @@
     padding-left: 1.5rem;
 }
 
-.appear-Text{
+.L-appear-Text{
     padding-right: 3rem;
     font-size: 1.2rem;
     transform: translateY(-.5rem);
 }
 
-.Lang-Dark-Social .social-media{
+.L-appear-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-.5rem);
+    
+}
+
+.L-darkmodebtn{
+    background: transparent;
+    border: .1rem solid #21354760;
+    padding:.2rem;
+    padding-right: 2rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  
+    
+}
+
+.L-sun{
+    width: 2rem;
+    height:2rem;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    
+    
+}
+.L-moon{
+    width: 2rem;
+    height:2rem;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    transform: translate(100%, 0%);
+  
+   
+}
+/* ............ End DarkMode Button Section........... */
+
+
+
+.Lang-Dark-Social .L-social-media{
     display: flex;
     align-items: center;
     justify-content: left;

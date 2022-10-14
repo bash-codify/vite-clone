@@ -1,7 +1,7 @@
 .service-container{
     width:100vw;
     margin-top: 7rem;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .service-wrapper{
@@ -154,11 +154,10 @@ p{
 
 
 @media screen and (min-width:768px) {
-    
-    .service-wrapper{
-        max-width:85vw;
-        margin: 0 auto;
+    .service-container{
+        overflow: hidden;
     }
+
     .service-wrapper{
         max-width:90vw;
         margin: 0 auto;

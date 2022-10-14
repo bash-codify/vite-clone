@@ -18,8 +18,8 @@ const Langdarkmodesocial = () => {
     
     <div className='Lang-Dark-Social'>
 
-    <div className="language">
-                <div className='active' onClick={() => setLangToggle((prev) => !prev)}>
+    <div className="L-language">
+                <div className='L-active' onClick={() => setLangToggle((prev) => !prev)}>
                   
                   {
                     selectindex? language[selectindex].lang :  <p>English</p>
@@ -33,7 +33,7 @@ const Langdarkmodesocial = () => {
                     const {id, lang} = item;
                     return(
 
-                      <div className='otherslanguage' onClick={() =>{
+                      <div className='L-otherslanguage' onClick={() =>{
                         setSelectIndex(index)
                         setLangToggle(false)
                       } } key={id}>
@@ -47,18 +47,18 @@ const Langdarkmodesocial = () => {
 
               </div>
 
-              <div className="appearance">
-                <div className='appear-Text'>
+              <div className="L-appearance">
+                <div className='L-appear-Text'>
                   <p>
                     Appearance
                   </p>
                 </div>
                 <div>
-                  <button className='darkmodebtn' onClick={() => setMode((prev)=> !prev)}>
+                  <button className='L-darkmodebtn' onClick={() => setMode((prev)=> !prev)}>
 
                     {
                       !mode && 
-                    <span className='sun'>
+                    <span className='L-sun'>
 
                     <MdOutlineWbSunny />
 
@@ -66,7 +66,7 @@ const Langdarkmodesocial = () => {
                     }
                     {
                       mode &&
-                    <span className='moon'> 
+                    <span className='L-moon'> 
 
                     <MdOutlineBedtime />
 
@@ -76,14 +76,14 @@ const Langdarkmodesocial = () => {
                 </div>
               </div>
 
-              <div className="social-media">
-                    <div className='twitter'>
+              <div className="L-social-media">
+                    <div className='L-twitter'>
                     <FaTwitter/>
                     </div>
-                    <div className='discord'>
+                    <div className='L-discord'>
                     <FaDiscord/>
                     </div>
-                    <div className='github'>
+                    <div className='L-github'>
                     <FaGithub/>
                     </div>
               </div>

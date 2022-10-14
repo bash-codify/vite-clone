@@ -1,6 +1,7 @@
 .footer-container{
     width: 100vw;
     padding: 3rem 0;
+    overflow: hidden;
 }
 .footer-wrapper{
     width: 90vw;

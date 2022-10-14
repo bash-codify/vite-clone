@@ -76,7 +76,7 @@ const Header = () => {
     const LangHandler = (e)=>{
       if(!langRef.current?.contains(e.target)){
       
-       setLanga(true)
+       setLanga(false)
       }
 
      

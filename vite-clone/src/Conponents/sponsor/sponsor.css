@@ -364,6 +364,10 @@
 }
 
 @media screen and (min-width:640px) {
+    .sponsor-container{
+      
+        overflow: hidden;
+    }
 
     .plati-container{
 
@@ -383,11 +387,9 @@
         justify-content: center;
         align-items: center;
         filter: grayscale(100%);
-        
-        
-        
-        
+ 
     }
+
     .sponsor-icons img{
        
         height: 4rem;
@@ -445,6 +447,11 @@
 
 
 @media screen and (min-width:832px) {
+
+    .sponsor-container{
+
+        overflow: hidden;
+    }
 
     .plati-container{
 
@@ -519,6 +526,14 @@
 
 
 @media screen and (min-width:970px) {
+
+    .sponsor-container{
+
+        overflow: hidden;
+    }
+    
+ 
+    
 
     .plati-spon{
 
