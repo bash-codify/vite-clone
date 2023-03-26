@@ -1,5 +1,5 @@
 header{
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,7 +14,7 @@ header{
 
 
 nav{
-    width: 100vw;
+    width: 100%;
     border-bottom: .1rem solid  #2135471c;
     padding: .11rem;
     overflow: hidden;
@@ -31,12 +31,11 @@ nav{
 
 .navbar{
 
-    width: 90vw;
+    width: 90%;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
     overflow: hidden;
 
 }
@@ -67,6 +66,7 @@ nav{
 
 .btn-icons{
 
+    justify-self: end;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,6 +88,7 @@ nav{
  /* .....Mobile MenuIcons Section.....*/
 
 .hambugger{
+    
     width:1.5rem;
     height: 2rem;
     border-bottom:.2rem solid  #213547;
@@ -144,14 +145,13 @@ nav{
 
 
 .bar{
-    font-size: 2.2rem;
+
+    font-size: 1.9rem;
     color: #213547;
     font-weight: 600;
     text-align: center;
     transform: translateX(.4rem);
     cursor: pointer;
-   
-   
 }
 
 .lang{
@@ -173,7 +173,7 @@ nav{
     align-items: center;
     overflow: auto;
     padding-bottom: 1.5rem;
-    margin-top: 6.6rem;
+    margin-top: 6.4rem;
     
     
 }
@@ -184,7 +184,12 @@ nav{
 
  .search-button-large, 
  .large-navlist-container, 
- .large-menu-icon, .lang, .XLangdarksocial, .resource-container{
+ .Xlarge-menu-icon, 
+ .lang, 
+ .XLangdarksocial, 
+ .resource-container, 
+ .versions-container, 
+ .NavLinksXL{
     display: none;
  }
 
@@ -342,6 +347,7 @@ nav{
         float: center;
         gap: 1.8rem;
         cursor: pointer;
+        justify-self: end;
     }
     
     
@@ -374,7 +380,7 @@ nav{
 
     .navbar{
 
-        width: 95vw;
+        width: 95%;
         margin: 0 auto;
         padding:1rem;
         display: flex;
@@ -385,8 +391,8 @@ nav{
     .logo-container{
         
         padding-right: 2rem;
-       
-    }
+        
+    } 
     
 
     /* ...Some mobile Screen NavList Property Disable..*/
@@ -395,13 +401,15 @@ nav{
         display: none;
     }
 
+    .NavLinksXL{
 
-    /* ...Some mobile Screen NavList Property Disable..*/
+        flex: 4;
+    }
 
     /* ......Large screen NavList Search Button section........*/
    
 
-    .search-button-large, .lang{
+    .search-button-large, .lang, .NavLinksXL{
         display: block;
     }
 
@@ -415,6 +423,8 @@ nav{
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        flex: 5;
+
        
     }
 
@@ -425,6 +435,7 @@ nav{
 
         font-size: 1.6rem;
         padding-right: .8rem;
+        transform: translateY(.25rem);
     }
 
     .searchtext{
@@ -442,68 +453,12 @@ nav{
         
     }
 
-    /* ......Large screen NavList Search Button section........*/
-
-
-    .large-navlist-container{
-        display:flex;
-        align-items: center;
-        justify-content: right;
-        flex: 2;
-        padding: 1.2rem 0;
-       
-    }
-
-    .large-navlist-container .large-navlinks-wrapper{
-
-        display: flex;
-        justify-content: center;
-        gap:2.4rem;
-        align-items: center;
-        font-size: 1.4rem;
-        font-weight: 500;
-        color: #6F3949;
-        cursor: pointer;
-    
-    }
-
-  
-    .large-navlist-container .large-navlinks-wrapper .large-links{
-
-        border: none;
-        width: 100%;
-       
-        
-    }
-
-    .large-links a:hover{
-
-        color: var(--btn-Color);
-    }
-
-    .plus{
-        padding-left: 0;
-        display: none;
-    }
-
-    .arrowdown{
-      
-        font-size: 1.8rem;
-        margin-top: .5rem;
-            
-    }
-
-    .hoverLink{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: .1rem;
-    }
-
+ 
+    /* ......End Large screen NavList Search Button section........*/
 
     /* ......Large screen NavList Menu-Bar-Icon section........*/
 
-    .large-menu-icon{
+    .Xlarge-menu-icon{
 
         font-size: 2.2rem;
         display: flex;
@@ -515,12 +470,7 @@ nav{
         
     }
 
-     /* ......Large screen NavList Menu-Bar-Icon section........*/
-
-    /* ......Large screen NavList section........*/
-
-
-     /* ......Large screen NavList Hover section........*/
+     /* ...... End Large screen NavList Menu-Bar-Icon section........*/
 
     .resource-container{
         display: flex;
@@ -542,6 +492,7 @@ nav{
         border-radius: 1.5rem;
 
     }
+
     .resource-container ul{
         display: flex;
         align-items: center;
@@ -651,15 +602,12 @@ nav{
     }
    
 
-     /* ......Large screen NavList Hover section........*/
-
-     /* ...... End of Large screen NavList section........*/
 }
 
 @media only screen and (min-width: 960px) {
 
     header{
-        width: 100vw;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -667,18 +615,12 @@ nav{
         background: rgba(255, 255, 255, 0.87);
         overflow: hidden;
         position: fixed;
-        z-index: 999;
-        
-    
     
     }
     nav{
         border: none;
-        z-index: -999;
+       
     }
-
-   
-
 
     .resource-container{
        
@@ -686,8 +628,11 @@ nav{
     }
 
     .versions-container{
-       
+     position: fixed;
         margin-right: 6rem;
+        z-index: 1000;
+      
+        
     }
 }
 
@@ -696,7 +641,7 @@ nav{
 
     .navbar{
 
-        width: 95vw;
+        width: 95%;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -712,54 +657,51 @@ nav{
        
     }
 
-   
-
-    .large-navlist{
+    .NavLinksXL{
         padding-right: 1.5rem;
         flex: 4;
     }
 
-    
-    .large-menu-icon{
+    .Xlarge-menu-icon{
         display: none;
     }
-
 
     .resource-container{
         margin-right: 43rem;
     }
+
     .versions-container{
         margin-right: 33rem;
     }
 
+    .XLangdarksocial{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        padding-left: 3rem;
+    }
 
- .XLangdarksocial{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    padding-left: 3rem;
- }
 
-
- .XLangdarksocial .language{
+    .XLangdarksocial .language{
+            
+        border: none;
+        position: relative;
+        /* padding-left: 2.7rem;
+        padding-right: 4rem;
+        padding-right:0; */
+        display: flex;
+        width: fit-content;
+        padding: 0 .4rem;
+        cursor: pointer;
         
-       border: none;
-       position: relative;
-      /* padding-left: 2.7rem;
-      padding-right: 4rem;
-      padding-right:0; */
-      display: flex;
-      width: fit-content;
-      padding: 0 .4rem;
-      cursor: pointer;
     
-   
-       
+        
     }
 
 
     .language::after{
+        
         content: "";
         position: absolute;
         top: 0;

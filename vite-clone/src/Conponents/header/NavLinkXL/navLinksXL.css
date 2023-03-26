@@ -1,0 +1,89 @@
+  
+
+@media screen and (min-width:769px) {
+
+        .large-navlist-container{
+            display:flex;
+            align-items: center;
+            justify-content: right;
+            flex: 2;
+            padding: 1.2rem 0;
+           
+        }
+    
+        .large-navlist-container .large-navlinks-wrapper{
+    
+            display: flex;
+            justify-content: center;
+            gap:2rem;
+            align-items: center;
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: #6F3949;
+            cursor: pointer;
+        
+        }
+    
+      
+        .large-navlist-container .large-navlinks-wrapper .large-links{
+    
+            border: none;
+            width: 100%;
+           
+            
+        }
+    
+        .large-links a:hover{
+    
+            color: var(--btn-Color);
+        }
+    
+        .plus{
+            padding-left: 0;
+            display: none;
+        }
+    
+        .arrowdown{
+          
+            font-size: 1.8rem;
+            margin-top: .5rem;
+                
+        }
+    
+        .hoverLink{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .1rem;
+        }
+    
+    
+        /* ......Large screen NavList Menu-Bar-Icon section........*/
+    
+        .large-menu-icon{
+    
+            font-size: 2.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            padding-left: 2rem;
+            
+            
+        }
+    
+         /* ......End Large screen NavList Menu-Bar-Icon section........*/
+    
+         /* ...... End of Large screen NavList section........*/
+    }
+
+    
+    
+@media screen and (min-width:1280px) {
+
+    .large-navlist{
+        padding-right: 1.5rem;
+        flex: 4;
+    }
+
+}

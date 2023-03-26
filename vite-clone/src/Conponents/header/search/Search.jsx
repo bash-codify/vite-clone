@@ -34,8 +34,8 @@ useEffect(() => {
   return (
    
         <section className='search-container' >
-            <article className='search-wrapper' >
-                <div className='search-content-container' ref={container}>
+            <article className='search-wrapper'ref={container} >
+                <div className='search-content-container' >
 
 
                   <form>

@@ -2,14 +2,22 @@ import React,{useState} from 'react'
 import { FiHeart } from "react-icons/fi";
 import './sponsor.css'
 import Data from './data'
+import { useGlobalHeader } from '../header/context';
 
 const Sponsor = () => {
 
+    const {setResource, setVersion, setLanga, setLargeMenuIcon} = useGlobalHeader();
     const [sponsors, setSponsors] = useState(Data);
 
 
   return (
-    <section className="sponsor-container">
+    <section className="sponsor-container" onMouseOver={()=>{
+        setResource(false)
+        setVersion(false)
+        setLanga(false)
+        setLargeMenuIcon(false)
+
+    } }>
         <article className="sponsor wrapper">
             <div className='spon-icon'>
                 <FiHeart />
@@ -79,7 +87,7 @@ const Sponsor = () => {
                                     const { gold_icon} = goldIcon;
                                     return (
 
-                                    <div className="gold-spon-icons">
+                                    <div className="gold-spon-icons" key={index}>
 
 
                                         <img src={gold_icon} alt="" />

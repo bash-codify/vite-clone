@@ -4,14 +4,20 @@ import Hero from './hero/Hero';
 import Service from './service/Service';
 import Sponsor from './sponsor/Sponsor';
 import Footer from './footer/Footer';
+import { AppProvider } from './header/context';
 
 
 const Home = () => {
   return (
    
-    <div>
+    <AppProvider>
 
-      <Header /> 
+      <div>
+
+        < Header /> 
+
+      </div>
+
 
       
       <main>
@@ -25,7 +31,7 @@ const Home = () => {
 
       </main>
 
-    </div>
+    </AppProvider>
   )
 }
 

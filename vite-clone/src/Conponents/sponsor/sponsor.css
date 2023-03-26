@@ -1,5 +1,5 @@
 .sponsor-container{
-    width: 100vw;
+    width: 100%;
     margin-top: 10rem;
     border-bottom: .1rem solid  #2135471c;
     padding-bottom: 5rem;
@@ -8,7 +8,7 @@
 
 .sponsor-wrapper{
 
-    max-width: 90vw;
+    max-width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -38,15 +38,6 @@
     margin-top: 3rem;
 }
 
-.empty-sponsor{
-    display: none;
-}
-.empty-sponsor-gold{
-    display: none;
-}
-.empty-sponsor-gold1{
-    display: none;
-}
 
 .plati-spon{
 
@@ -82,10 +73,7 @@
     align-items: center;
 
     filter: grayscale(100%);
-    
-    
-    
-    
+ 
 }
 .sponsor-icons img{
    
@@ -150,6 +138,17 @@
     background: rgba(170, 170, 170, 0.192);
 }
 
+.empty-sponsor{
+    display: none;
+}
+.empty-sponsor-gold{
+    display: none;
+}
+.empty-sponsor-gold1{
+    display: none;
+}
+
+
 
 .sponsor-btn{
     margin-top: 5rem;
@@ -178,7 +177,7 @@
 
 
     .sponsor-container{
-        width: 100vw;
+        width: 100%;
         margin-top: 10rem;
         border-bottom: .1rem solid  #2135471c;
         padding-bottom: 5rem;
@@ -187,7 +186,7 @@
     
     .sponsor-wrapper{
     
-        max-width: 90vw;
+        max-width: 90%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -364,6 +363,7 @@
 }
 
 @media screen and (min-width:640px) {
+    
     .sponsor-container{
       
         overflow: hidden;

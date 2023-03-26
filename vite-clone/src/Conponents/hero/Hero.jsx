@@ -1,12 +1,23 @@
 import React from 'react';
 import './hero.css'
 import HeroImage from '../../assets-vite/logo-with-shadow.png';
+import { useGlobalHeader } from '../header/context';
 
 const Hero = () => {
+
+    const {setResource, setVersion, setLanga, setLargeMenuIcon} = useGlobalHeader();
+
+   
   return (
-    <section className="hero-container">
-        <article className="hero-wrapper">
-            <div className="hero-content">
+    <section className="hero-container" onMouseOver={()=>{
+        setResource(false)
+        setVersion(false)
+        setLanga(false)
+        setLargeMenuIcon(false)
+
+    } }>
+        <article className="hero-wrapper" >
+            <div className="hero-content"  >
 
                 <div className="hero-text">
                     

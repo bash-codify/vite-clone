@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
 import Data from './data'
 import './service.css'
+import { useGlobalHeader } from '../header/context';
 
 const Service = () => {
+  const {setResource, setVersion, setLanga, setLargeMenuIcon} = useGlobalHeader();
   const [services, setServices] = useState(Data);
   return (
-    <section className="service-container">
+    <section className="service-container" onMouseOver={()=>{
+      setResource(false)
+      setVersion(false)
+      setLanga(false)
+      setLargeMenuIcon(false)
+
+  } }>
         <article className="service-wrapper">
 
           {

@@ -2,7 +2,7 @@
 
 .search-container{
 
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     position: fixed;
     top: 0;
@@ -15,7 +15,7 @@
 
 .search-wrapper{
 
-    width: 95vw;
+    width: 95%;
     margin: 0 auto;
     margin-top: 1rem;
     display: flex;
@@ -202,8 +202,9 @@ input{
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(130, 137, 157, 0.918);
+        background: rgba(130, 137, 157, 0.89);
         overflow: hidden;
+        z-index: 999;
     }
 
     .search-wrapper{

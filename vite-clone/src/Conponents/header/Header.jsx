@@ -1,5 +1,5 @@
 import React,{ useState, useEffect, useRef }  from 'react';
-import { MdNorthEast, MdAdd, MdKeyboardArrowDown,MdTranslate, MdOutlineWbSunny, MdOutlineBedtime, MdOutlineClose,MdMoreHoriz } from "react-icons/md";
+import { MdNorthEast, MdKeyboardArrowDown,MdTranslate, MdOutlineWbSunny, MdOutlineBedtime, MdOutlineClose,MdMoreHoriz } from "react-icons/md";
 import { FaTwitter, FaDiscord,FaGithub } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
 import './header.css';
@@ -8,21 +8,21 @@ import langs from './langdata';
 import MobileMenu from './mobilemenu/MobileMenu';
 import Langdarkmodesocial from './largeScreen/Langdarkmodesocial';
 import Search from './search/Search'
+import { useGlobalHeader } from './context';
+import NavLinksXL from './NavLinkXL/NavLinksXL';
 
 
 
 
 const Header = () => {
 
+  const {resource, setResource, langa, setLanga, version, setVersion, largemenuicon, setLargeMenuIcon} = useGlobalHeader();
+
+
   const [menuToggle, setMenuToggle] =useState(false);
-  const [resource, setResource] = useState(false);
-  const [version, setVersion] = useState(false);
-  const [largemenuicon, setLargeMenuIcon] = useState(false);
   const [languages, setLanguages] = useState(langs);
   const [mode, setMode] = useState(false);
-  const [langa, setLanga] = useState(false);
   const [searchToggle, setSearchToggle] = useState(false);
-  const langRef = useRef(null)
 
  
   const MenuToggleBtn = ()=>{
@@ -33,20 +33,29 @@ const Header = () => {
 
   }
 
-  // const MouseEnter = () =>{
-  //   setResource (true)
-  // }
-  
-  // const MouseEnter2 = () =>{
-  //   setVersion (true)
-  // }
- 
-  
-  // const MouseEnter3 = () =>{
-  //   setLargeMenuIcon (true)
-  // }
- 
-  
+  const SearchToggleBtn = ()=>{
+
+    setSearchToggle((searchToggle)=>{
+
+      return !searchToggle;
+
+    })
+
+    searchToggle? document.body.style.overflowY = 'auto' : document.body.style.overflowY = 'hidden';
+
+  }
+
+  const HandleOver = (e)=>{
+    
+    if(!e.target.className.contains('NavLinksXL')){
+      
+      setResource(false)
+        setVersion(false)
+        setLanga(false)
+        setLargeMenuIcon(false)
+    }
+  }
+
 
 
   useEffect(()=>{
@@ -75,32 +84,12 @@ const Header = () => {
   }, []);
 
 
-  useEffect(()=>{
-    const LangHandler = (e)=>{
-      if(!langRef.current?.contains(e.target)){
-      
-       setLanga(false)
-      }
-
-     
-    }
-
-    document.addEventListener('mouseleave', LangHandler);
-
-    return (()=>{
-      document.removeEventListener('mouseleave', LangHandler)
-    });
-
-  },[langa])
-
-  
-
 
   return (
 
-    <header>
+    <header >
 
-      <nav>
+      <nav onMouseOver={HandleOver}>
 
         <div className="navbar">
 
@@ -125,7 +114,7 @@ const Header = () => {
 
             <div className="search-icon">
 
-              < FiSearch onClick={()=> setSearchToggle((prev) => !prev)}/>
+              < FiSearch onClick={()=> SearchToggleBtn(false)}/>
 
             </div>
 
@@ -152,7 +141,7 @@ const Header = () => {
           </div>
 
           <div className='search-button-large'>
-            <div className='bttnsearch' onClick={()=> setSearchToggle((prev) => !prev)}>
+            <div className='bttnsearch' onClick={()=> SearchToggleBtn(true)}>
               <span className='searchicon'>
               < FiSearch />
               </span>
@@ -161,30 +150,30 @@ const Header = () => {
             </div>
           </div>
 
-          <div className ="large-navlist-container">
-
-            <ul className="large-navlinks-wrapper">
-
-              <li className='large-links'><a href="/">Guide</a></li>
-              <li className='large-links'><a href="/">Config</a></li>
-              <li className='large-links'><a href="/">Plugins</a></li>
-              <li className='large-links hoverLink ' onMouseEnter={()=> setResource (true)}>Resource<span className='arrowdown'><MdKeyboardArrowDown/></span></li>
-              <li className='large-links hoverLink' onMouseEnter={()=> setVersion (true)} >Version <span className='arrowdown'><MdKeyboardArrowDown/></span></li>
-            
-            </ul>
-
+          <div className='NavLinksXL'>
+            <NavLinksXL/>
           </div>
 
- 
-          <div className='large-menu-icon'>
 
-            <MdMoreHoriz  onMouseEnter={()=> setLargeMenuIcon (true)} />
+          <div className='Xlarge-menu-icon'>
+
+            <MdMoreHoriz  onMouseEnter= {()=>{
+                setResource(false)
+                setVersion(false)
+                setLargeMenuIcon(true)
+                setLanga(true)
+              } } />
 
           </div>
 
           <div className='XLangdarksocial'>
 
-              <div className="language" onMouseEnter={() => setLanga(true)}>
+              <div className="language" onMouseEnter= {()=>{
+                setResource(false)
+                setVersion(false)
+                setLargeMenuIcon(false)
+                setLanga(true)
+              } }>
 
                 <div className='active' >
                   <div className='langicon'>
@@ -300,18 +289,20 @@ const Header = () => {
             </ul>
 
           </div>
+
         }
 
         {
 
           version &&
 
-        <div className='versions-container'>
-          <ul >
-            <li><a href="/">Vite 2 Docs</a><span className='icon' ><MdNorthEast/></span></li>
-          </ul>
+            <div className='versions-container'>
+              <ul >
+                <li><a href="/">Vite 2 Docs</a><span className='icon' ><MdNorthEast/></span></li>
+              </ul>
 
-        </div>
+            </div>
+
         }
 
       </nav>
